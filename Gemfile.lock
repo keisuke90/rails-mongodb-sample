@@ -71,6 +71,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
+    bson (4.15.0)
     builder (3.2.4)
     capybara (3.39.2)
       addressable
@@ -114,6 +115,13 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.18.1)
+    mongo (2.19.0)
+      bson (>= 4.14.1, < 5.0.0)
+    mongoid (8.1.0)
+      activemodel (>= 5.1, < 7.1, != 7.0.0)
+      concurrent-ruby (>= 1.0.5, < 2.0)
+      mongo (>= 2.18.0, < 3.0.0)
+      ruby2_keywords (~> 0.0.5)
     msgpack (1.7.1)
     net-imap (0.3.6)
       date
@@ -167,6 +175,7 @@ GEM
     reline (0.3.6)
       io-console (~> 0.5)
     rexml (3.2.5)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.10.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -215,6 +224,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  mongoid
   puma (~> 5.0)
   rails (~> 7.0.6)
   selenium-webdriver
