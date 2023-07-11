@@ -7,6 +7,8 @@
     <%= render post %>
     <p>
       <%= link_to "Show this post", post %>
+      <%= link_to "Edit this post", edit_post_path(post) %>
+      <%= link_to "Delete this post", post, data: { "turbo-method": :delete, "turbo-confirm": 'Are you sure?' } %>
     </p>
   <% end %>
 </div>
