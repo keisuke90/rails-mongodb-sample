@@ -69,3 +69,5 @@ end
 
 gem 'mongoid'
 gem 'devise'
+gem 'slim-rails'
+gem 'html2slim'
