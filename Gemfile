@@ -71,3 +71,5 @@ gem 'mongoid'
 gem 'devise'
 gem 'slim-rails'
 gem 'html2slim'
+gem 'cssbundling-rails'
+gem "tailwindcss-rails", "~> 2.0"
