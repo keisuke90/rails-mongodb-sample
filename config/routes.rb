@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'home/show'
 
-  root to: "home#index"
+  root to: "posts#index"
   
   
   ## 開発環境用letter_opener
