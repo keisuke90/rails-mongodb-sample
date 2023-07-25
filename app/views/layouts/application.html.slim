@@ -9,11 +9,10 @@ html
     = stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload"
     = javascript_importmap_tags
   body
-    header style="margin-top:30px;"
+    header
       nav
         - if user_signed_in?
-          p.text-3xl.font-bold.underline
-           | Logged in as #{current_user.name}
+          p Logged in as #{current_user.name}
           = link_to 'プロフィール変更', edit_user_registration_path
           |
           = link_to "ログアウト", destroy_user_session_path
@@ -25,4 +24,5 @@ html
     p.notice = notice
     p.alert = alert
 
-    = yield
+    .max-w-6xl.mx-auto
+      = yield
