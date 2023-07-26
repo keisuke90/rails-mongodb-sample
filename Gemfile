@@ -73,4 +73,5 @@ gem 'slim-rails'
 gem 'html2slim'
 gem 'cssbundling-rails'
 gem "tailwindcss-rails", "~> 2.0"
+gem "redis", "~> 4.8.1", "< 5" 
 gem "redis-actionpack"
